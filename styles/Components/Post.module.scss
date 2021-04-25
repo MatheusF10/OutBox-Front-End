@@ -1,0 +1,95 @@
+.postContainer{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Open-sans', sans-serif;
+    border-radius: 30px;
+    box-shadow: #c4c4c4 5px 5px 15px;
+    width: 75%;
+    margin: 2rem
+    ;
+    height: 500px;
+    .Delete{
+        align-self: flex-start;
+        margin-left: 2.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        button{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: none;
+            background-color: transparent;
+
+            .Icon:hover{
+                color: #c4c4c4;
+                transition: 0.2s ease-in-out;
+            }
+        }
+    }
+    header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        .Profile{
+            align-self: end ;
+        }
+        .lyricContent{
+            padding: 1rem;
+            align-self: start;
+            text-align: center;
+            font-size: 1rem;
+            
+        }
+        
+    }
+    .postContent{
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        align-items: center;
+        justify-items: center;
+        font-family: 'Open-sans', sans-serif;
+        font-weight: bold;
+        font-size: 25px;
+        text-align: center;
+        width: 100%;
+        max-width: 300px;
+        text-align: start;
+
+        .likeContainer{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        
+            .Icon{
+                cursor: pointer;
+                margin: 1rem;
+                
+        
+               
+            }
+            .Icon:hover{
+                color: gray;
+                transition: 0.2s ease-in-out;
+            }
+        
+            .likeContent{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+        
+                p{
+                    font-size: 10px;
+                    color: black;
+                    margin-left: -15px;
+                }
+            }
+        }
+}
+
+}
