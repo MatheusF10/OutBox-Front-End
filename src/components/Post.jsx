@@ -27,7 +27,7 @@ export default function Post(props){
                     <div className={styles.postContent}>
                         <p>{props.text}</p> 
                         <img src="" alt=""/>   
-                        <Like id={props.id}></Like>
+                        {props.children}
                     </div>
                     
                 </div>
