@@ -12,11 +12,11 @@ export default function Post(props){
     const deletePost =  async (id) => {
         var result = await api.delete(`/api/posts/${id}`) 
         if(result.status === 200){
-            window.location.href = "/"
+            window.location.reload()
         }
     }
     return(
-        <div className={styles.postContainer}>
+        <div style={{height: `${props.height}%`}} className={styles.postContainer}>
                     <div className={styles.Delete}>
                         <button onClick={() => deletePost(props.id)}><Icon.X className={styles.Icon}></Icon.X></button>
                     </div>

@@ -6,13 +6,14 @@ export default class MyDocument extends Document{
             <Html>
                  <Head>
 
-                 <title>Out Box</title>
+                 
                  <link rel="shortcut icon" href="outbox.svg" type="image/png"/>
                  <link rel="preconnect" href="https://fonts.gstatic.com"/>
                  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Oxygen&display=swap" rel="stylesheet"/>
                  </Head>
 
                  <body>
+                    <title>Out Box</title>
                     <Main/>
                     <NextScript></NextScript>
                 </body>

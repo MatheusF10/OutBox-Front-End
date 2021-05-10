@@ -1,7 +1,7 @@
 .profileContainer{
     display: grid;
     grid-template-columns: 1fr 4fr;
-    align-content: center;
+    align-content: start;
     justify-content: center;
     
 
@@ -13,16 +13,16 @@
         flex-direction: column;
         height: 100vh;
         background-color: #E3E3E3;
-        width: 100%;
-        
+        width: 20%;
+        position: fixed;
         .buttonContent{
             display: flex;
             align-items: center;
             justify-content: center;
             flex-direction: column;
-            margin-bottom: 5rem;
+            margin-bottom: 10rem;
             
-                button{
+                .markbook{
                     width: 150px;
                     height: 55px;
                     background: #5CB0BB;
@@ -35,7 +35,7 @@
                     margin-bottom: 2rem;
                     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
                 }
-                button:hover{
+                .markbook:hover{
                     filter: brightness(90%);
                 }
 
@@ -56,7 +56,7 @@
             flex-direction: column;
 
             a{
-                color: gray;
+                color: rgba(0, 0, 0, 0.5);;
                 margin-bottom: 1rem;
                 font-family: 'Open-sans' sans-serif;
                 font-weight: 600;
@@ -92,7 +92,7 @@
         margin-top: 2.5rem;
         box-sizing: border-box;
         
-        textarea{
+        .input{
             display: flex;
             align-items: center;
             justify-content: center;
@@ -108,7 +108,7 @@
             margin-bottom: 2rem;
             padding: 15px;
         }
-       button{
+       .plusButton{
         align-self: flex-end;
         display: flex;
         align-items: center;
@@ -120,13 +120,23 @@
         color: white;
         border-radius: 30px;
         margin-right: 10%;
+        
        
 
        
        }
-       button:hover{
+       .plusButton:hover{
         filter: brightness(90%);
     }
       
+    }
+
+    .cardContainer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-content: center;
+        justify-content: center;
+        width: 80%;
+        height: 100%;
     }
 }
